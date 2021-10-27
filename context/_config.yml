@@ -3,17 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
-language: en
-timezone: ''
+title: ah cheng
+subtitle: 尘世中一个迷途的小书童
+description: personal bolg
+keywords: life
+author: ah cheng
+language: zh-CN
+timezone: Asia/Shanghai
 
 # URL
-## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
+url: https://github.com/ah-cheng/ah-cheng.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,14 +98,48 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: yilia-plus
 
-# Deployment
-## Docs: https://hexo.io/docs/one-command-deployment
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
-
 deploy:
   type: git
-  repo: git@github.com:ah-cheng/ah-cheng.github.io.git #https://github.com/ah-cheng/ah-cheng.github.io.git
+  repo: https://github.com/ah-cheng/ah-cheng.github.io.git
   branch: main
+
+# Extensions
+plugins:
+  hexo-generator-feed
+
+## feed   
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
+  content:
+
+## sitemap
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: false
+    tags: true

@@ -13,7 +13,7 @@ timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: https://github.com/ah-cheng/ah-cheng.github.io
+url: https://github.com/ah-cheng/ah-cheng.github.io 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -104,7 +104,7 @@ theme: yilia-plus
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/ah-cheng/ah-cheng.github.io.git
+  repo: git@github.com:ah-cheng/ah-cheng.github.io.git
   branch: main
 
 # Extensions
